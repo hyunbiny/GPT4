@@ -38,7 +38,7 @@ if api_key:
     # OpenAI 모델 초기화
     llm = ChatOpenAI(
         temperature=0.1 if difficulty == "Easy" else 0.5,
-        model="gpt-3.5-turbo-1106",
+        model="gpt-4o-mini",
         api_key=api_key,
         streaming=True,
         callbacks=[StreamingStdOutCallbackHandler()],
